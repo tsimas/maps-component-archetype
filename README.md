@@ -13,7 +13,6 @@ Scaffolds the 4 bundles of Maps Components  : persistence , persistence service,
       -Dversion=0.0.1-SNAPSHOT
 
 2b.Interactiv console (sample):
-
   package=com.avon
   groupId=com.avon
   artifactId=com.avon.maps.offer
@@ -26,7 +25,7 @@ Scaffolds the 4 bundles of Maps Components  : persistence , persistence service,
   angular-name=offer
   webcontent-priority=1
   
-3. Copy the generated directories to MAPS (Don't copy the generated com.avon.prototype directory and the outer pom.xlm .They are just for technically purpose.)
+3. Copy the generated directories to MAPS 
 
 =================================
 
