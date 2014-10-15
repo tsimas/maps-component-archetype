@@ -12,7 +12,8 @@ Scaffolds the 4 bundles of Maps Components  : persistence , persistence service,
                   -DgroupId=com.avon 
                   -Dversion=0.0.1-SNAPSHOT
 
-3.    Interactiv console (sample):
+            Interactiv console (sample):
+
             package=com.avon
             groupId=com.avon
             artifactId=com.avon.maps.offer
