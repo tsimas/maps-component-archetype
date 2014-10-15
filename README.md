@@ -17,10 +17,7 @@ Scaffolds the 4 bundles of Maps Components  : persistence , persistence service,
             groupId=com.avon
             artifactId=com.avon.maps.offer
             version=0.1-SNAPSHOT
-  
-            Generate directory path:
             dir=maps/offer/  <---- (artifactid minus groupId with '/')
-  
             module-description=Module description
             angular-name=offer
             webcontent-priority=1
