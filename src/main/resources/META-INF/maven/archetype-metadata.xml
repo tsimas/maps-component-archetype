@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="com.avon.parent"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <requiredProperties>
+
+    <requiredProperty key="module-description">
+      <defaultValue>Offer Module</defaultValue>
+    </requiredProperty>
+
+    <requiredProperty key="dir">
+      <defaultValue>maps/offer/</defaultValue>
+    </requiredProperty>
+
+    <requiredProperty key="angular-name">
+      <defaultValue>offer</defaultValue>
+    </requiredProperty>
+
+    <requiredProperty key="webcontent-priority">
+      <defaultValue>1</defaultValue>
+    </requiredProperty>
+
+
+  </requiredProperties>
+
+  <modules>
+    <module id="${rootArtifactId}.persistence" dir="__rootArtifactId__.persistence" name="${rootArtifactId}.persistence">
+      <fileSets>
+        <fileSet packaged="true" filtered="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8" filtered="true">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}.persistence.service" dir="__rootArtifactId__.persistence.service" name="${rootArtifactId}.persistence.service">
+      <fileSets>
+        <fileSet packaged="true" filtered="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8" filtered="true">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+
+        <fileSet packaged="true" filtered="true" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8" filtered="true">
+          <directory>src/test/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}.rest" dir="__rootArtifactId__.rest" name="${rootArtifactId}.rest">
+      <fileSets>
+        <fileSet packaged="true" filtered="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8" filtered="true">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+   <module id="${rootArtifactId}.webcontent" dir="__rootArtifactId__.webcontent" name="${rootArtifactId}.webcontent">
+      <fileSets>
+        <fileSet encoding="UTF-8" filtered="true">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.*</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>

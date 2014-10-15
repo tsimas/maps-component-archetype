@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+<modelVersion>4.0.0</modelVersion>
+
+<parent>
+        <groupId>${groupId}</groupId>
+        <artifactId>com.avon.prototype.webcontent</artifactId>
+        <version>${version}</version>
+        <relativePath>../com.avon.prototype/com.avon.prototype.persistence.service</relativePath>
+</parent>
+<packaging>bundle</packaging>
+<artifactId>${artifactId}</artifactId>
+<name>AVON :: ${module-description} Web Content</name>
+
+<properties>
+    <webcontent.priority>${webcontent-priority}</webcontent.priority>
+</properties>
+
+</project>

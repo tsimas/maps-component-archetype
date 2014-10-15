@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <title>Mass Update Selling Price</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/avon.css">
+    <link rel="stylesheet" href="../styles/security.css">
+    <link rel="stylesheet" type="text/css" href="css/${angular-name}.css"/>
+
+
+    <script src="../libs/angular.min.js" type="text/javascript"></script>
+    <script src="../libs/angular-cookies.min.js" type="text/javascript"></script>
+    <script src="../libs/angular-cookie.min.js"></script>
+    <script src="../libs/angular-route.min.js"></script>
+    <script src="../libs/angular-cache-2.3.7.min.js"></script>
+    <script src="../libs/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="../libs/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../libs/angular-sanitize.min.js" type="text/javascript"></script>
+    <script src="../libs/underscore.min.js" type="text/javascript"></script>
+    <script src="../libs/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
+
+    <!-- Common Security -->
+    <script src="../scripts/security/security.js" type="text/javascript"></script>
+    <script src="../scripts/security/security-service.js" type="text/javascript"></script>
+    <script src="../scripts/security/security-directive.js" type="text/javascript"></script>
+    <script src="../scripts/security/security-directive-service.js" type="text/javascript"></script>
+
+    <!-- Common -->
+
+    <script src="../scripts/common.js" type="text/javascript"></script>
+    <script src="../scripts/old-maps-location-service.js" type="text/javascript"></script>
+    <script src="../scripts/old-maps-location-controller.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../components/loader.js"></script>
+
+    <!-- Filter Section Components -->
+    <script src="../components/market-combobox.js" type="text/javascript"></script>
+    <script src="../components/market-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/sales-period-combobox.js" type="text/javascript"></script>
+    <script src="../components/sales-period-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/vehicle-combobox-multiselect/vehicle-combobox-multiselect.js" type="text/javascript"></script>
+    <script src="../components/combobox/vehicle-combobox-multiselect/vehicle-combobox-multiselect-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/brand-combobox/brand-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/brand-combobox/brand-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/brochure-section-combobox/brochure-section-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/brochure-section-combobox/brochure-section-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/category-combobox/category-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/category-combobox/category-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/offset-combobox/offset-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/offset-combobox/offset-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/sales-type-combobox/sales-type-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/sales-type-combobox/sales-type-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/energy-chart-element-combobox-multiselect/energy-chart-element-combobox-multiselect.js" type="text/javascript"></script>
+    <script src="../components/combobox/energy-chart-element-combobox-multiselect/energy-chart-element-combobox-multiselect-service.js"  type="text/javascript"></script>
+    <script src="../components/combobox/sales-class-combobox-multiselect/sales-class-combobox-multiselect.js" type="text/javascript"></script>
+    <script src="../components/combobox/sales-class-combobox-multiselect/sales-class-combobox-multiselect-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/sub-brand-combobox/sub-brand-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/sub-brand-combobox/sub-brand-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/form-combobox/form-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/form-combobox/form-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/form-group-combobox/form-group-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/form-group-combobox/form-group-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/combobox/segment-combobox/segment-combobox.js" type="text/javascript"></script>
+    <script src="../components/combobox/segment-combobox/segment-combobox-service.js" type="text/javascript"></script>
+    <script src="../components/input-box/concept-input-box/concept-input-box.js" type="text/javascript"></script>
+    <script src="../components/input-box/concept-input-box/concept-input-box-service.js" type="text/javascript"></script>
+
+
+
+
+    <!-- ${persitent-webcontent-entity-dir} JS-->
+    <script type="text/javascript" src="scripts/${angular-name}.js"></script>
+    <script type="text/javascript" src="scripts/${angular-name}-controller.js"></script>
+    <script type="text/javascript" src="scripts/${angular-name}-service.js"></script>
+    <script type="text/javascript" src="scripts/${angular-name}-directive.js"></script>
+
+
+
+</head>
+<body class="pull-left" data-ng-app="${angular-name}">
+
+<!--
+        Footer
+-->
+<div id="footer">
+    <div class="container col-lg-4" data-ng-show="false">
+        <p></p>
+        <div class="col-lg-2">Complete:</div>
+        <div class="progress progress-striped active">
+            <div class="progress-bar" data-role="progressbar"
+                 data-aria-valuenow="45" data-aria-valuemin="0"
+                 data-aria-valuemax="100" style="width: 45%">
+                <span class="sr-only">45% Complete</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+    Logo
+-->
+<div id="logo-canvas" data-ng-controller="MenuController">
+    <a href="{{oldMapsUrl}}home/home.jsp"
+       class="pull-left"><img id="logo" src="../images/avonmapslogo.png"
+                              alt="logo" /></a>
+</div>
+
+<!--
+    Menu
+-->
+<div data-ng-bind-html="menuItems" data-ng-controller="MenuController"></div>
+
+<!--
+    View
+-->
+<div ng-view></div>
+
+<div id="overlay">
+    <div id="loading">
+        <img src="../images/ajax-loader.gif" width="20" height="20" />
+    </div>
+</div>
+
+</body>
+</html>
