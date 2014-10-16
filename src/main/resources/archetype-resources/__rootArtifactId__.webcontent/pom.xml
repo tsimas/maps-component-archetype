@@ -9,7 +9,7 @@
         <groupId>${groupId}</groupId>
         <artifactId>com.avon.prototype.webcontent</artifactId>
         <version>${version}</version>
-        <relativePath>../com.avon.prototype/com.avon.prototype.persistence.service</relativePath>
+        <relativePath>../com.avon.prototype/com.avon.prototype.webcontent</relativePath>
 </parent>
 <packaging>bundle</packaging>
 <artifactId>${artifactId}</artifactId>

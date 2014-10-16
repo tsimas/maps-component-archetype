@@ -6,9 +6,9 @@
 
 <parent>
         <groupId>${groupId}</groupId>
-        <artifactId>com.avon.prototype.persistence.service</artifactId>
+        <artifactId>com.avon.prototype.rest</artifactId>
         <version>${version}</version>
-        <relativePath>../com.avon.prototype/com.avon.prototype.persistence.service</relativePath>
+        <relativePath>../com.avon.prototype/com.avon.prototype.rest</relativePath>
 </parent>
 <packaging>bundle</packaging>
 <artifactId>${artifactId}</artifactId>
