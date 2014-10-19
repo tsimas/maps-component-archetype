@@ -25,6 +25,7 @@ Scaffolds the 4 bundles of Maps Components  : persistence , persistence service,
   
 4.    Copy the generated directories to MAPS 
 5.    Delete DeleteMe files
+6.    You can see the generated structure in generated.txt
 
 
 
