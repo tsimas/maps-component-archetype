@@ -1,0 +1,74 @@
+.
+├── com.avon.projectname
+│   ├── com.avon.projectname.persistence
+│   │   ├── pom.xml
+│   │   └── src
+│   │       └── main
+│   │           ├── java
+│   │           │   └── com
+│   │           │       └── avon
+│   │           │           └── projectname
+│   │           │               └── persistence
+│   │           │                   └── model
+│   │           │                       └── DeleteMe.java
+│   │           └── resources
+│   │               └── META-INF
+│   │                   └── persistence.xml
+│   ├── com.avon.projectname.persistence.service
+│   │   ├── pom.xml
+│   │   └── src
+│   │       ├── main
+│   │       │   ├── java
+│   │       │   │   └── com
+│   │       │   │       └── avon
+│   │       │   │           └── projectname
+│   │       │   │               └── persistence
+│   │       │   │                   └── service
+│   │       │   │                       └── base
+│   │       │   │                           ├── AbstractService.java
+│   │       │   │                           ├── PersistenceService.java
+│   │       │   │                           └── Service.java
+│   │       │   └── resources
+│   │       └── test
+│   │           ├── java
+│   │           │   └── com
+│   │           │       └── avon
+│   │           └── resources
+│   │               └── META-INF
+│   │                   └── persistence.xml
+│   ├── com.avon.projectname.rest
+│   │   ├── enunciate.xml
+│   │   ├── pom.xml
+│   │   └── src
+│   │       └── main
+│   │           ├── java
+│   │           │   └── com
+│   │           │       └── avon
+│   │           │           └── projectname
+│   │           │               └── rest
+│   │           │                   ├── deleteMe.java
+│   │           │                   └── model
+│   │           │                       └── deleteMe.java
+│   │           └── resources
+│   ├── com.avon.projectname.webcontent
+│   │   ├── pom.xml
+│   │   └── src
+│   │       └── main
+│   │           └── resources
+│   │               └── projectname
+│   │                   ├── components
+│   │                   │   └── delete.me
+│   │                   ├── css
+│   │                   │   └── projectname.css
+│   │                   ├── json
+│   │                   │   └── delete.me
+│   │                   ├── projectname.html
+│   │                   └── scripts
+│   │                       ├── projectname-controller.js
+│   │                       ├── projectname-directive.js
+│   │                       ├── projectname.js
+│   │                       └── projectname-service.js
+│   └── pom.xml
+└── structure.txt
+
+48 directories, 23 files
