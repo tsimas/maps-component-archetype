@@ -24,6 +24,7 @@ Scaffolds the 4 bundles of Maps Components  : persistence , persistence service,
             webcontent-priority=1
   
 4.    Copy the generated directories to MAPS 
+5.    Delete DeleteMe files
 
 
 
